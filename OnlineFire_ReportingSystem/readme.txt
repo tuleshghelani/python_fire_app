@@ -27,3 +27,33 @@ If you are familiar with Django, you know that Django provides an initial collec
 
 8. Run server
 > python manage.py runserver 
+
+==> run python project in back groud 
+screen -d -m python manage.py runserver 0.0.0.0:8000
+
+==> kill python prot
+kill -9 $(lsof -t -i:8000 -sTCP:LISTEN)
+-------------------------------------------------------
+install python
+https://computingforgeeks.com/how-to-install-python-on-ubuntu-linux-system/
+
+
+----------------------------------------------------
+Error:
+  File "manage.py", line 17
+    ) from exc
+         ^
+
+pip3 install django
+python3 manage.py startapp <yourapp name>
+pip install psycopg2-binary
+
+sudo yum remove postgresql postgresql-server
+sudo rm -rf /var/lib/psql
+sudo yum install postgresql postgresql-server
+
+
+https://medium.com/nerd-for-tech/how-to-deploy-python-django-project-on-aws-ec2-ubuntu-server-5c484fdb8f8c
+
+virtualenv myprojectenv
+ source myprojectenv/bin/activate
