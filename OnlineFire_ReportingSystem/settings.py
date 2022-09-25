@@ -66,10 +66,10 @@ WSGI_APPLICATION = 'OnlineFire_ReportingSystem.wsgi.application'
 DATABASES = {
     'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'postgres',
-       'USER': 'tulesh',
-       'PASSWORD': '512512aA$',
-       'HOST': 'python-fire.cultd7iwyred.ap-south-1.rds.amazonaws.com',
+       'NAME': 'da9o8flrbu76l4',
+       'USER': 'rmcdzhxqvjtbbf',
+       'PASSWORD': 'fff091897637a0044bdead1b8c39b97cf62bf9d1f706a0d9f16a7cc75f38aec0',
+       'HOST': 'ec2-18-235-86-66.compute-1.amazonaws.com',
        'PORT': '5432'
     }
 }

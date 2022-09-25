@@ -30,6 +30,7 @@ If you are familiar with Django, you know that Django provides an initial collec
 
 ==> run python project in back groud 
 screen -d -m python manage.py runserver 0.0.0.0:8000
+screen -d -m python manage.py runserver 0.0.0.0:8000 > app_log.log &
 
 ==> kill python prot
 kill -9 $(lsof -t -i:8000 -sTCP:LISTEN)
